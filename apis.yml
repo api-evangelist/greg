@@ -1,21 +1,44 @@
 aid: greg
 name: Greg
-description: 'Greg is a company surfaced as a portfolio company of index-ventures and added to the API
-  Evangelist network as a stub for enrichment. Sector: ai-ml. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Greg is a consumer mobile application for plant identification and care,
+  available on iOS and Android. Users photograph a plant to identify it in seconds and
+  receive smart, personalized care guidance — watering schedules, light and soil
+  recommendations, and reminders — alongside a community of plant enthusiasts, care
+  articles, and a plant directory. Greg is an Index Ventures portfolio company in the
+  AI/ML space, applying computer-vision plant recognition. It is a consumer app and does
+  not currently publish a developer API, SDK, or developer portal.'
 url: https://raw.githubusercontent.com/api-evangelist/greg/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - index-ventures
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: consumer-app-no-api
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://media.greg.app/static/plantx-website-assets/home/Greg_App_PlantVision.png
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Ai Ml
+- Plants
+- Plant Care
+- Gardening
+- Plant Identification
+- Computer Vision
+- Mobile App
+- Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/greg-domain-security.yml
 - type: Website
   url: https://greg.app/
+- type: Blog
+  url: https://greg.app/blog/
+- type: Support
+  url: https://greg.app/support/
+- type: PrivacyPolicy
+  url: https://greg.app/privacy/
+- type: TermsOfService
+  url: https://greg.app/terms/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
